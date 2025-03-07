@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../assets/image/sharkin-circle-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Hacked By Sharkin">
+    <meta name="keywords" content="Hacked By Sharkin">
+    <meta name="author" content="Sharkin">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hacked By Sharkin">
+    <meta property="og:description" content="Hacked By Sharkin">
+    <meta property="og:image" content="../assets/image/sharkin-logo.png">
+    <meta property="og:url" content="https://t.me/thesharkin">
+    <meta property="og:site_name" content="Hacked By Sharkin">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hacked By Sharkin">
+    <meta name="twitter:description" content="Hacked By Sharkin">
+    <meta name="twitter:image" content="../assets/image/sharkin-logo.png">
+    <meta name="twitter:site" content="@SharkinSec">
+    <meta name="theme-color" content="#000000">
+    <meta property="discord:title" content="Hacked By Sharkin">
+    <meta property="discord:description" content="Hacked By Sharkin">
+    <meta property="discord:image" content="../assets/image/sharkin-logo.png">
+    <meta property="discord:site" content="Sharkin">
+    <meta property="telegram:channel" content="@thesharkin">
+    <meta property="telegram:title" content="Hacked By Sharkin">
+    <meta property="telegram:description" content="Hacked By Sharkin">
+    <meta property="telegram:image" content="../assets/image/sharkin-logo.png">
+    
+    <title>Hacked By Sharkin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+        * { margin: 0; padding: 0; font-weight: lighter; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+        html, body { height: 100%; min-height: 100vh; }
+        body { text-align: center; font-family: 'Oxanium', cursive; position: relative; background: white; color: #000; display: flex; flex-direction: column; }
+        #matrix-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; filter: blur(0.5px); opacity: 0.3; }
+        .content-wrapper { position: relative; padding: 20px; flex: 1; display: flex; flex-direction: column; background: transparent; }
+        .main-content { padding-top: 5%; }
+        img { width: 300px; height: 300px; border-radius: 50%; border: 1px solid #000; }
+        section { display: flex; flex-direction: row; align-items: flex-end; justify-content: center; margin: 20px 0; white-space: nowrap; }
+        section h3:before { content: ''; }
+        section:before, section:after { content: ''; height: 1px; background: #000; width: 100%; display: inline-block; align-self: flex-end; margin-bottom: 1.0%; }
+        section:after { margin-bottom: 1.5%; }
+        h1 { margin-top: 2.5%; font-size: 60px; font-weight: lighter; }
+        h3 { font-weight: lighter; margin-bottom: 12px; }
+        .security-alert { margin: 20px auto; max-width: 100%; }
+        .security-alert i { font-weight: bold; letter-spacing: 1px; }
+        .security-alert p { font-size: 16px; line-height: 1.5; }
+        a { color: inherit; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    <div class="content-wrapper">
+        <div class="main-content">
+            <img src="../assets/image/sharkin-profile.gif" alt="Sharkin Logo">
+            <br>
+            <section>
+                <h1>Hacked By Sharkin.</h1>
+                <h3>Your website security is weak</h3>
+            </section>
+            <div class="security-alert">
+                <p><i>Security Alert</i>: This website's data is archived on my Telegram channel. If you want the data removed, contact me on <a href="https://t.me/thesharkin"><i>Telegram</i></a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const titles=["Hacked By Sharkin","System Compromised","Security Breach","Access Denied","System Override","Control: Failed","Security: Bypassed"];const MATRIX_CONFIG={chars:'01',fontSize:12,speed:1.2,spawnRate:.95,frameRate:30};function initTitleAnimation(){let currentIndex=0;setInterval(()=>{document.title=titles[currentIndex];currentIndex=(currentIndex+1)%titles.length},200)}function initSecurityMeasures(){document.addEventListener('selectstart',e=>e.preventDefault());document.addEventListener('mousedown',e=>{if(e.detail>1)e.preventDefault()});document.addEventListener('contextmenu',e=>e.preventDefault());document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&['+','-','0'].includes(e.key)){e.preventDefault()}e.preventDefault()});document.addEventListener('wheel',e=>{if(e.ctrlKey||e.metaKey)e.preventDefault()},{passive:false});document.addEventListener('touchstart',e=>{if(e.touches.length>1)e.preventDefault()},{passive:false})}class MatrixAnimation{constructor(){this.canvas=document.getElementById('matrix-bg');this.ctx=this.canvas.getContext('2d');this.drops=[];this.columns=0;this.initCanvas();window.addEventListener('resize',()=>this.initCanvas())}initCanvas(){this.canvas.width=window.innerWidth;this.canvas.height=window.innerHeight;this.columns=Math.ceil(this.canvas.width/MATRIX_CONFIG.fontSize);this.initDrops()}initDrops(){this.drops=Array(this.columns).fill().map(()=>Math.floor(Math.random()*-100))}draw(){this.ctx.fillStyle='rgba(255, 255, 255, 0.08)';this.ctx.fillRect(0,0,this.canvas.width,this.canvas.height);this.ctx.fillStyle='rgba(0, 0, 0, 0.7)';this.ctx.font=`${MATRIX_CONFIG.fontSize}px monospace`;this.drops.forEach((drop,i)=>{const char=MATRIX_CONFIG.chars[Math.floor(Math.random()*MATRIX_CONFIG.chars.length)];this.ctx.fillText(char,i*MATRIX_CONFIG.fontSize,drop*MATRIX_CONFIG.fontSize);if(drop*MATRIX_CONFIG.fontSize>this.canvas.height&&Math.random()>MATRIX_CONFIG.spawnRate){this.drops[i]=0}this.drops[i]+=MATRIX_CONFIG.speed})}start(){setInterval(()=>this.draw(),1000/MATRIX_CONFIG.frameRate)}}function init(){initTitleAnimation();initSecurityMeasures();const matrix=new MatrixAnimation();matrix.start()}document.addEventListener('DOMContentLoaded',init);
+    </script>
+</body>
+</html> 
