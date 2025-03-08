@@ -15,7 +15,7 @@
 
 ## 📋 About
 
-Collection of HTML deface pages used in my operations. Simple, clean, and ready to deploy.
+My official deface page.
 
 ## 👁️ Preview
 
